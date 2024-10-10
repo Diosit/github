@@ -1,20 +1,44 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      Ejemplo de Uso de Github Desktop
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="outline" href="https://github.com" target="_blank" rel="noopener noreferrer">
+        Visitar GitHub
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+    <ion-toolbar color="secondary">
+      <ion-title size="large">¡Comencemos!</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="container" class="text-center">
+    <h2>¿Listo para crear una app?</h2>
+    <p>Empieza con Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components" class="highlight">UI Components</a></p>
+    <ion-button expand="full" color="success" href="https://ionicframework.com/docs/getting-started" target="_blank" rel="noopener noreferrer">
+      Aprende más sobre Ionic
+    </ion-button>
   </div>
 </ion-content>
+
+<style>
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .highlight {
+    color: var(--ion-color-primary);
+    font-weight: bold;
+  }
+</style>
